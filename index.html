@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sell</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            SpendWise AI
+        </div>
+
+        <nav>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Audit</a>
+            <a href="#">FAQ</a>
+        </nav>
+
+        <button class="nav-btn">
+            Start Audit
+        </button>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div>
+
+            <h1>
+                Stop Overpaying
+                <span>For AI Tools</span>
+            </h1>
+
+            <p>
+                Audit your AI stack instantly and uncover hidden savings
+                across ChatGPT, Claude, Cursor, Gemini and more.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn">
+                    Audit My Stack
+                </button>
+
+                <button class="secondary-btn">
+                    Watch Demo
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="dashboard">
+
+            <div class="dashboard-top">
+
+                <div>
+                    <p>Total AI Spend</p>
+                    <h2 id="totalSpend">$0/month</h2>
+                </div>
+
+                <span>Save 0%</span>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3 id="monthlySavings">$0</h3>
+                    <p>Monthly Savings</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="yearlySavings">$0</h3>
+                    <p>Yearly Savings</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3 id="toolCount">1</h3>
+                    <p>AI Tools</p>
+                </div>
+
+            </div>
+
+
+            <div class="chart">
+
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TRUSTED -->
+
+    <section class="trusted">
+
+        <h2>Supported AI Platforms</h2>
+
+        <div class="logos">
+
+            <div>Cursor</div>
+            <div>Claude</div>
+            <div>ChatGPT</div>
+            <div>Gemini</div>
+            <div>Copilot</div>
+            <div>OpenAI</div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <h2>Why Use SpendWise AI</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>💰 Cost Tracking</h3>
+
+                <p>
+                    Monitor and optimize AI subscription expenses
+                    across your entire team.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>⚡ Instant Audit</h3>
+
+                <p>
+                    Get real-time AI spend analysis and uncover
+                    unnecessary costs instantly.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>🤖 Smart Suggestions</h3>
+
+                <p>
+                    Discover cheaper plans and better alternatives
+                    for your workflow.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <h3>📊 Savings Reports</h3>
+
+                <p>
+                    Generate detailed monthly and yearly savings reports.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FORM -->
+
+    <section class="form-section">
+
+        <h2>Audit Your AI Stack</h2>
+
+        <form class="audit-form">
+
+            <select>
+                <option>Select AI Tool</option>
+                <option>Cursor</option>
+                <option>ChatGPT</option>
+                <option>Claude</option>
+                <option>Gemini</option>
+            </select>
+
+
+            <select>
+                <option>Select Plan</option>
+                <option>Free</option>
+                <option>Pro</option>
+                <option>Team</option>
+                <option>Enterprise</option>
+            </select>
+
+
+            <input type="number" id="spend" placeholder="Monthly Spend ($)">
+
+            <input type="number" id="seats" placeholder="Number of Seats">
+
+            <input type="number" id="team" placeholder="Team Size">
+
+            <select>
+                <option>Primary Use Case</option>
+                <option>Coding</option>
+                <option>Writing</option>
+                <option>Research</option>
+                <option>Mixed</option>
+            </select>
+
+
+            <button type="submit" class="analyze-btn">
+                Analyze Spend
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- RESULTS -->
+
+    <section class="results" id="report">
+
+        <h2>Your Savings Report</h2>
+
+        <div class="result-cards">
+
+            <div class="result-card">
+                <h3 id="reportTotal">$0</h3>
+                <p>Total Monthly Spend</p>
+            </div>
+
+            <div class="result-card highlight">
+                <h3 id="reportSavings">$0</h3>
+                <p>Potential Monthly Savings</p>
+            </div>
+
+            <div class="result-card">
+                <h3 id="reportYearly">$0</h3>
+                <p>Yearly Savings</p>
+            </div>
+
+        </div>
+
+
+        <div class="suggestions">
+
+            <h3>Suggested Optimizations</h3>
+
+            <ul id="suggestionList">
+
+                <li>Analyze your tools to get suggestions</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- EMAIL -->
+
+    <section>
+
+        <div class="email-box">
+
+            <h2>Want The Full Audit Report?</h2>
+
+            <input type="email" placeholder="Enter Your Email">
+
+            <button class="primary-btn">
+                Download Report
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonials">
+
+        <h2>What Founders Say</h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <p class="stars">
+                    ★★★★★
+                </p>
+
+                <p>
+                    “SpendWise AI helped us save over $300 monthly
+                    across our engineering stack.”
+                </p>
+
+                <br>
+
+                <h4>
+                    — Startup Founder
+                </h4>
+
+            </div>
+
+
+            <div class="testimonial-card">
+
+                <p class="stars">
+                    ★★★★★
+                </p>
+
+                <p>
+                    “The smartest AI expense tool we’ve used.”
+                </p>
+
+                <br>
+
+                <h4>
+                    — Engineering Lead
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-box">
+            <div class="faq-question">
+                <p>How does the audit work?</p>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                Our system analyzes your AI tool subscriptions,
+                team size and monthly spend to identify unnecessary
+                costs and recommend cheaper alternatives.
+            </div>
+        </div>
+
+
+        <div class="faq-box">
+            <div class="faq-question">
+                <p>Is my data secure?</p>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                Yes. We do not store sensitive company data.
+                Your information is only used to generate
+                the audit report.
+            </div>
+        </div>
+
+
+        <div class="faq-box">
+            <div class="faq-question">
+                <p>Which AI tools are supported?</p>
+                <span>+</span>
+            </div>
+
+            <div class="faq-answer">
+                We currently support ChatGPT, Claude, Cursor,
+                Gemini, Copilot and other major AI platforms.
+            </div>
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            SpendWise AI © 2026 • Privacy • Terms • Contact
+        </p>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
